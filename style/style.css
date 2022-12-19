@@ -1,0 +1,92 @@
+
+@font-face {
+    font-family: "LexendPeta";
+    src: url(../fonts/Lexa/LexendPeta-Regular.ttf);
+    /* font-family: "Montserrat-BoldItalic";
+    src: url(../fonts/Montserrat-BoldItalic.ttf); */
+}
+
+
+.rotate-center {
+	        animation: rotate-center 60s infinite;
+}
+
+@keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0) scale(1);
+    }
+
+    50%{
+
+        transform: rotate(0) scale(0.5);
+    }
+
+
+
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+
+body{text-align:center ;}
+h1{
+    font-family: 'LexendPeta';
+    font-size: 100px;
+    line-height: 100px;
+    text-align: center;
+
+}
+
+    
+h3{
+    font-family: 'Montserrat-BoldItalic';
+    font-size: 70px;
+    text-align: center;
+    color: darkslategray;
+}
+
+.bod_color{
+    background-color: aquamarine;
+    background-image: linear-gradient(to top,  rgb(0, 255, 174),aqua );
+}
+    
+.margin-nav li{
+    margin: 200px;
+}
+
+
+.italic{
+    font-style: italic ;
+}
+.nav-display-none
+{
+
+    display: inline;
+}
+button {
+    margin-top: 30px;
+    margin-left: 30px;color: rgb(83, 20, 220);
+    background: rgb(13, 255, 0);
+    border: 5px solid green;
+    border-radius: 20px;
+    font-size: 20px;
+}
+@keyframes rotate-colors{
+  100% {
+    filter: hue-rotate(360deg);
+  } 
+}
+.hue-animate img{
+    animation: rotate-colors 6s linear infinite;
+}
+.combo img{
+    filter: saturate(5) blur(2px);
+    transition-duration: 0,5s;
+}
+.combo img:hover{
+    filter: none;
+}
+
+
